@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('logo.png'); /* Set logo as background */
+  background-size: cover; /* Ensure it covers the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  color: #fff; /* Ensure the text is visible against the background */
+}
+
+/* Style the header */
+.header {
+  background-color: rgba(241, 241, 241, 0.8); /* Slight transparency for better readability */
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Logo styling */
+.header img {
+  width: 150px; /* Make the logo larger */
+  height: auto;
+  margin-right: 20px; /* Space between the logo and text */
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #342299;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(12, 2, 188);
+}
+
+/* Create three equal columns that float next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* Style the footer */
+.footer {
+  background-color: #062c9e;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Style the About Us section */
+.about-us {
+  background-color: rgba(0, 0, 0, 0.6); /* Slight transparent black background to enhance readability */
+  padding: 40px 20px;
+  text-align: center;
+  margin: 30px auto;
+  width: 80%; /* Make the content box smaller */
+  border-radius: 10px;
+}
+
+.about-us h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <img src="logo.png" alt="Hydrate with Inspo Logo"> <!-- Logo image -->
+  <div>
+    <h1>Hydrate with Inspo</h1>
+    <p>Quench your thirst with style</p>
+  </div>
+</div>
+
+<div class="topnav">
+  <a href="Homepage.html">Homepage</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="PhotoGallery.html">Photo Gallery</a>
+  <a href="ContactUs.html">Contact Us</a>
+  <a href="GetInvolved.html">Get Involved</a>
+</div>
+
+<!-- About Us Section -->
+<div class="about-us">
+  <h2>About Us</h2>
+  <p>Hydrate With Inspo is Dedicated to promoting hydration and minimizing single-use plastic waste. Hydrate with Inspo is an environmentally conscious company that specializes in premium, sustainable water bottles. For those who care about their health and the environment, the company wants to offer fashionable, long-lasting, and useful bottles.</p>
+  <p>We believe hydration should be stylish, functional, and eco-friendly. Our water bottles are designed to help individuals stay hydrated while reducing the impact of plastic waste. With advanced insulation technology, our bottles can keep your beverages cold for 24 hours or hot for 12 hours, making them perfect for both busy professionals and outdoor enthusiasts.</p>
+  <p>Our commitment to sustainability goes beyond the design of our bottles. We source materials from eco-friendly suppliers, ensuring that each bottle is as sustainable as possible. Additionally, we are constantly exploring ways to reduce our carbon footprint through sustainable manufacturing practices and packaging materials.</p>
+  <p>At Hydrate With Inspo, we are passionate about offering a wide range of bottle designs and personalization options that allow individuals to express their unique style. Whether you're into sleek, minimalist designs, or bold, artistic expressions, we've got a water bottle that’s perfect for you.</p>
+  <p>Our mission is to inspire a healthier lifestyle, reduce single-use plastic, and contribute to a cleaner, greener planet. Join us in making hydration a beautiful, sustainable, and healthy habit!</p>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Industry Analysis:</h2>
+    <p>The reusable water bottle industry is a fast-growing market with increasing consumer demand for sustainable, eco-friendly alternatives to single-use plastic bottles. Hydration awareness continues to rise, as more individuals seek products that promote wellness and performance. The global reusable water bottle market is expected to reach USD 10.6 billion by 2027, driven by the growing trend of sustainability and health-conscious living.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Executive Summary</h2>
+    <p>Hydrate with Inspo is a company that creates premium, eco-friendly water bottles designed to keep individuals hydrated in style while promoting overall health and wellness. Our mission is to inspire people to prioritize hydration by offering high-quality, functional, and aesthetically pleasing water bottles that fit into an active, health-conscious lifestyle. The brand will focus on sustainability, high-performance designs, and unique personalization options to differentiate ourselves in the competitive market of hydration solutions.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Products and Services</h2>
+    <p>Core Product Line: Hydrate with Inspo Water Bottles. Features: Stainless steel (BPA-free), Insulated to keep beverages cold for 24 hours and hot for 12 hours, Leak-proof design, Ergonomically shaped for easy holding. Design Options: Customizable with personal engravings or unique colors, Limited-edition artist-designed bottles, Motivational quotes and wellness-inspired designs.</p>
+  </div>
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Hydrate with Inspo. All Rights Reserved. | Website created by Elaine Nyembe</p>
+</div>
+
+</body>
+</html>
