@@ -1,0 +1,1 @@
+My website now has css code whuch makes it more aligned as well as more appealing to the end user. I have also added referencing to my website proposal. My images are now loaded, hence leading to them working and loading properly.
